@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    @apply bg-[url('https://media.istockphoto.com/id/184285842/photo/sky-background.jpg?s=612x612&w=0&k=20&c=Wk4wUePZHemozZQBAZlm3rNlLAxu6a6A4zOrU0VUTAM=')] bg-no-repeat bg-cover h-screen relative before:content-[''] before:absolute before:bg-black before:h-screen before:w-screen before:top-0 before:left-0 z-10 before:-z-10 flex flex-col justify-center items-center
+}
+
+h1 {
+    @apply text-center text-white font-semibold text-2xl
+}
+
+.search {
+    @apply flex justify-center py-10
+}
+
+input {
+    @apply outline-none px-2 py-1 rounded-lg cursor-pointer w-52
+}
+
+.add {
+    @apply bg-blue w-72 rounded-md flex flex-row justify-between items-center px-5 py-2
+}
+
+.reg {
+    @apply flex justify-between flex-col py-1 gap-5
+}
+
+.reg {
+    @apply text-2xl text-white font-medium
+}
+
+.weather {
+    @apply text-xs text-white font-medium
+}
+
+.temp p {
+    @apply text-4xl text-white font-medium
+}
+.reg img {
+    @apply w-4/12
+}
